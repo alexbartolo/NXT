@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/._*": true,
+			"**/*.rxe": true,
+			"**/*.nxc": true,
+			"MANIFEST*": true,
+			"dist": true,
+			"*.egg-info": true,
+			"build": true,
+			".travis.yml": true,
+			".vscode": true,
+			"*.code-workspace": true
+		}
+	}	
+}

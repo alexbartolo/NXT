@@ -1,0 +1,258 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001lcd_print	6	1	0	4	18
+1	__D0lcd_print	6	1	4	4	31
+2	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	8	4	2
+3	__signed_stack_002lcd_print	6	1	12	4	4
+4	__PointOutMutex	9	0	16	4	4
+5	_line_position	4	1	20	2	2
+6	_cur_lcd_line	4	0	22	2	7
+7	__lcd_print_7qG2_char_pos_7qG2_000	4	1	24	2	5
+8	__lcd_print_7qG2_i_7qG2_001	4	1	26	2	6
+9	__constVal200	4	0	28	2	4
+10	__lcd_print_return	1	1	30	1	3
+11	__PFTmp	1	1	31	1	1
+12	__constVal1	2	0	32	1	8
+13	____initialize_global_data_return	1	1	33	1	3
+14	__TextOutArgs	8	0	4	16	6
+15	__TextOutArgs.Result	2	1	36	1	6
+16	__TextOutArgs.Location	8	0	2	4	6
+17	__TextOutArgs.Location.X	4	1	40	2	6
+18	__TextOutArgs.Location.Y	4	1	42	2	6
+19	__TextOutArgs.Text	7	0	44	4	6
+20	__TextOutArgs.Text.Text_type	1	0	0	1	0
+21	__TextOutArgs.Options	5	1	48	4	6
+22	__PointOutArgs	8	0	3	12	8
+23	__PointOutArgs.Result	2	1	52	1	8
+24	__PointOutArgs.Location	8	0	2	4	8
+25	__PointOutArgs.Location.X	4	1	56	2	8
+26	__PointOutArgs.Location.Y	4	1	58	2	8
+27	__PointOutArgs.Options	5	1	60	4	8
+28	__strbufmain	7	0	64	4	2
+29	__strbufmain.__strbufmain_type	1	0	0	1	0
+30	__constStr0009	7	0	66	4	2
+31	__constStr0009.__constStr0009_type	1	1	0	1	0
+32	__strretvallcd_print	7	0	68	4	6
+33	__strretvallcd_print.__strretvallcd_print_type	1	0	0	1	0
+34	__constStr0010	7	0	70	4	1
+35	__constStr0010.__constStr0010_type	1	1	0	1	0
+36	__lcd_print_7qG2_character_7qG2_000	7	0	72	4	2
+37	__lcd_print_7qG2_character_7qG2_000.__lcd_print_7qG2_character_7qG2_000_type	1	0	0	1	0
+38	__strbuflcd_print	7	0	74	4	22
+39	__strbuflcd_print.__strbuflcd_print_type	1	0	0	1	0
+40	__strtmpbuflcd_print	7	0	76	4	4
+41	__strtmpbuflcd_print.__strtmpbuflcd_print_type	1	0	0	1	0
+42	__lcd_print_7qG2_text_7qG2_000	7	0	78	4	6
+43	__lcd_print_7qG2_text_7qG2_000.__lcd_print_7qG2_text_7qG2_000_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	142	0	#line 142 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	143	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	142	2	#line 142 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	6678	2	#line 6678 "NXCDefs.h"
+0	6679	2	#pragma macro 6
+0	6679	2		acquire __PointOutMutex
+0	6679	3		mov __PointOutArgs.Location.X, __constVal200
+0	6679	5		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	7		mov __PointOutArgs.Options, __constVal1
+0	6679	9		syscall 14, __PointOutArgs
+0	6679	12		release __PointOutMutex
+0	4971	13	#line 4971 "NXCDefs.h"
+0	6678	13	#line 6678 "NXCDefs.h"
+0	143	13	#line 143 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	143	13	#line 143 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	144	13		strcat __strbufmain, __constStr0010
+0	143	17	#line 143 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	144	17		mov __lcd_print_7qG2_text_7qG2_000, __strbufmain
+0	144	19	#line 144 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	145	19		subcall lcd_print, __lcd_print_return
+0	144	21	#line 144 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	144	21	#line 144 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	145	21		set __Wait_7qG2_ms_7qG2_000_inline_main, 4000
+0	144	24	#line 144 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	8551	24	#line 8551 "NXCDefs.h"
+0	8552	24		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	27	#line 8551 "NXCDefs.h"
+0	146	27	#line 146 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+0	147	27		exit -1, -1
+1	118	0	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	0		set __lcd_print_7qG2_char_pos_7qG2_000, 0
+1	118	3	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	118	3	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	3		set __lcd_print_7qG2_i_7qG2_001, 0
+1	118	6	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	118	6	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	6		mov __signed_stack_001lcd_print, __lcd_print_7qG2_i_7qG2_001
+1	118	8	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	118	8	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	8		strcat __strbuflcd_print, __lcd_print_7qG2_text_7qG2_000
+1	118	12	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	12		arrsize __D0lcd_print, __strbuflcd_print
+1	119	15		sub __D0lcd_print, __D0lcd_print, __constVal1
+1	118	19	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	19		cmp 0, __D0lcd_print, __signed_stack_001lcd_print, __D0lcd_print
+1	118	23	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	23		brtst 4, __ASM_Label_609, __D0lcd_print
+1	118	26	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	26		jmp __ASM_Label_610
+1	118	28	#line 118 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	28		add __lcd_print_7qG2_i_7qG2_001, __lcd_print_7qG2_i_7qG2_001, __constVal1
+1	119	32	#line 119 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	120	32		jmp __ASM_Label_608
+1	119	34	#line 119 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	120	34		strcat __strbuflcd_print, __lcd_print_7qG2_text_7qG2_000
+1	119	38	#line 119 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	120	38		mov __signed_stack_001lcd_print, __lcd_print_7qG2_i_7qG2_001
+1	119	40	#line 119 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	119	40	#line 119 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	120	40		set __D0lcd_print, 1
+1	121	43	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	43		strsubset __strretvallcd_print, __strbuflcd_print, __signed_stack_001lcd_print, __D0lcd_print
+1	121	48	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	48		strcat __strbuflcd_print, __strretvallcd_print
+1	121	52	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	52		mov __lcd_print_7qG2_character_7qG2_000, __strbuflcd_print
+1	121	54	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	121	54	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	54		strcat __strbuflcd_print, __lcd_print_7qG2_text_7qG2_000
+1	121	58	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	58		mov __signed_stack_001lcd_print, __lcd_print_7qG2_i_7qG2_001
+1	121	60	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	121	60	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	60		set __D0lcd_print, 1
+1	121	63	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	63		strsubset __strretvallcd_print, __strbuflcd_print, __signed_stack_001lcd_print, __D0lcd_print
+1	121	68	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	68		strcat __strbuflcd_print, __strretvallcd_print
+1	121	72	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	72		mov __strtmpbuflcd_print, __strbuflcd_print
+1	121	74	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	74		strcat __strbuflcd_print, __constStr0009
+1	121	78	#line 121 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	122	78		cmp 4, __D0lcd_print, __strtmpbuflcd_print, __strbuflcd_print
+1	122	82	#line 122 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	123	82		brtst 4, __ASM_Label_626, __D0lcd_print
+1	123	85	#line 123 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	124	85		add _cur_lcd_line, _cur_lcd_line, __constVal1
+1	123	89	#line 123 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	124	89	#line 124 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	125	89		set __lcd_print_7qG2_char_pos_7qG2_000, 0
+1	124	92	#line 124 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	124	92	#line 124 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	125	92	#line 125 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	126	92		jmp __ASM_Label_611
+1	125	94	#line 125 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	127	94	#line 127 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	127	94	#line 127 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	128	94		mov __signed_stack_001lcd_print, _cur_lcd_line
+1	127	96	#line 127 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	127	96	#line 127 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	128	96		set __D0lcd_print, 7
+1	127	99	#line 127 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	128	99		cmp 1, __D0lcd_print, __signed_stack_001lcd_print, __D0lcd_print
+1	128	103	#line 128 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	129	103		brtst 4, __ASM_Label_631, __D0lcd_print
+1	6678	106	#line 6678 "NXCDefs.h"
+1	6679	106	#pragma macro 6
+1	6679	106		acquire __PointOutMutex
+1	6679	107		mov __PointOutArgs.Location.X, __constVal200
+1	6679	109		mov __PointOutArgs.Location.Y, __constVal200
+1	6679	111		mov __PointOutArgs.Options, __constVal1
+1	6679	113		syscall 14, __PointOutArgs
+1	6679	116		release __PointOutMutex
+1	4837	117	#line 4837 "NXCDefs.h"
+1	6678	117	#line 6678 "NXCDefs.h"
+1	129	117	#line 129 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	130	117	#line 130 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	131	117		set _cur_lcd_line, 1
+1	130	120	#line 130 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	130	120	#line 130 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	132	120	#line 132 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	132	120	#line 132 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	133	120		set __signed_stack_001lcd_print, 64
+1	132	123	#line 132 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	132	123	#line 132 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	133	123		mov __signed_stack_002lcd_print, _cur_lcd_line
+1	132	125	#line 132 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	133	125	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	125		set __D0lcd_print, 8
+1	133	128	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	128		mul __D0lcd_print, __signed_stack_002lcd_print, __D0lcd_print
+1	133	132	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	132		sub _line_position, __signed_stack_001lcd_print, __D0lcd_print
+1	133	136	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	133	136	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	133	136	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	136		mov __signed_stack_001lcd_print, __lcd_print_7qG2_char_pos_7qG2_000
+1	133	138	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	133	138	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	138		set __D0lcd_print, 6
+1	133	141	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	141		mul __signed_stack_001lcd_print, __signed_stack_001lcd_print, __D0lcd_print
+1	133	145	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	133	145	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	145		mov __signed_stack_002lcd_print, _line_position
+1	133	147	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	133	147	#line 133 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	147		strcat __strbuflcd_print, __lcd_print_7qG2_character_7qG2_000
+1	134	151	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	151	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	135	151		mov __TextOutArgs.Location.X, __signed_stack_001lcd_print
+1	134	153	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	135	153		mov __TextOutArgs.Location.Y, __signed_stack_002lcd_print
+1	134	155	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	135	155		set __TextOutArgs.Options, 0
+1	134	158	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	135	158		mov __TextOutArgs.Text, __strbuflcd_print
+1	134	160	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	135	160		syscall 13, __TextOutArgs
+1	134	163	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	135	163		mov __D0lcd_print, __TextOutArgs.Result
+1	134	165	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	134	165	#line 134 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	135	165	#line 135 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	136	165		add __lcd_print_7qG2_char_pos_7qG2_000, __lcd_print_7qG2_char_pos_7qG2_000, __constVal1
+1	135	169	#line 135 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	137	169	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	169		jmp __ASM_Label_611
+1	137	171	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	137	171	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	171		strcat __strbuflcd_print, __lcd_print_7qG2_text_7qG2_000
+1	137	175	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	175		strcat __strbuflcd_print, __lcd_print_7qG2_text_7qG2_000
+1	137	179	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	179		arrsize __D0lcd_print, __strbuflcd_print
+1	138	182		sub __signed_stack_001lcd_print, __D0lcd_print, __constVal1
+1	137	186	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	137	186	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	186		set __D0lcd_print, 1
+1	137	189	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	189		sub __signed_stack_001lcd_print, __signed_stack_001lcd_print, __D0lcd_print
+1	137	193	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	137	193	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	193		set __D0lcd_print, 1
+1	137	196	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	196		strsubset __strretvallcd_print, __strbuflcd_print, __signed_stack_001lcd_print, __D0lcd_print
+1	137	201	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	201		strcat __strbuflcd_print, __strretvallcd_print
+1	137	205	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	205		mov __strtmpbuflcd_print, __strbuflcd_print
+1	137	207	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	207		strcat __strbuflcd_print, __constStr0009
+1	137	211	#line 137 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	138	211		cmp 5, __D0lcd_print, __strtmpbuflcd_print, __strbuflcd_print
+1	138	215	#line 138 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	139	215		brtst 4, __ASM_Label_646, __D0lcd_print
+1	139	218	#line 139 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	140	218		add _cur_lcd_line, _cur_lcd_line, __constVal1
+1	139	222	#line 139 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	141	222	#line 141 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	141	222	#line 141 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+1	142	222		subret __lcd_print_return
+2	149	0	#line 149 "C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc"
+2	150	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc
+1	lcd_print	30	C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc
+2	__initialize_global_data	254	C:\Users\alexj\Documents\NXT\pynxc\helloworld.nxc
